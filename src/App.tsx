@@ -23,6 +23,7 @@ function App() {
           <UpcomingSchedule />
         </div>
       </div>
+      <div>hi</div>
     </div>
   );
 }
