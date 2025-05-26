@@ -4,19 +4,25 @@ import Indicators from "./Indicators";
 
 export default function AnatomySection() {
   return (
-    <div className="relative flex items-center w-[290px] h-[420px] bg-blue-50/90 rounded-2xl p-2">
-      <CiSearch size={25} className="absolute right-3 top-3" />
+    <div className="relative flex items-center w-full lg:w-[290px] h-110 md:h-250 lg:h-[420px] bg-blue-50/90 rounded-2xl p-2">
+      <CiSearch className="absolute right-3 top-3 text-xl md:text-5xl" />
 
-      <div className=" w-full h-full flex items-center px-15 py-5">
+      <div className="w-full h-full flex items-center px-14 lg:px-15 py-2">
         <img
           src="/src/assets/image.png"
           alt="background"
           className=" w-full h-full object-fil rounded-lg "
         />
-        <IoIosQrScanner className="absolute text-blue-800/80  text-5xl left-26.5 bottom-27.5" />
-        <IoIosQrScanner className="absolute text-blue-800/80  text-5xl right-25 top-22 " />
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Top-right corner */}
+          <IoIosQrScanner className="absolute text-blue-800/80 text-5xl md:text-9xl top-[20%] right-[34%] md:top-[18%] md:right-[30%]" />
+
+          {/* Bottom-left corner */}
+          <IoIosQrScanner className="absolute text-blue-800/80 text-5xl md:text-9xl bottom-[24%] left-[37%] md:bottom-[22%] md:left-[33%]" />
+        </div>
       </div>
-      <div className="absolute -right-8 top-24 ">
+
+      <div className="absolute top-[22%] right-[-4%] md:top-[22%] md:right-[4%] lg:-right-8  lg:top-24">
         <Indicators
           label="Healthy Heart"
           icon="❤️"
@@ -25,7 +31,7 @@ export default function AnatomySection() {
         />
       </div>
 
-      <div className="absolute -left-2.5 bottom-29 ">
+      <div className="absolute  bottom-[26%] left-[2%] md:bottom-[26%] md:left-[9%] lg:-left-2.5 lg:bottom-29">
         <Indicators
           label="Healthy Leg"
           icon="🦵"
