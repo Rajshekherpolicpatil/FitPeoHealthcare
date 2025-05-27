@@ -2,7 +2,7 @@ import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { HiMenu } from "react-icons/hi";
 import { RiSearchLine } from "react-icons/ri";
-export default function Header({ onMenuToggle }) {
+export default function Header({ onMenuToggle }: { onMenuToggle: () => void }) {
   return (
     <div className="mt-2 lg:mt-5 md:mt-4 flex items-center w-full">
       <button
