@@ -1,12 +1,4 @@
-export interface ActivityBlock {
-  height: number;
-  color: string;
-}
-
-export type ActivityDay = ActivityBlock[];
-
-export type ActivityData = ActivityDay[];
-
+import type { ActivityData } from "../types/types";
 
 export const activityData: ActivityData = [
   [{ height: 20, color: "bg-gray-300" }],
@@ -78,4 +70,12 @@ export const activityData: ActivityData = [
   ],
   [{ height: 6, color: "bg-blue-500" }],
 ];
-export const days:string[] = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
+export const days: string[] = [
+  "Mon",
+  "Tues",
+  "Wed",
+  "Thurs",
+  "Fri",
+  "Sat",
+  "Sun",
+];

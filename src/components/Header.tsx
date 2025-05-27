@@ -2,11 +2,10 @@ import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { HiMenu } from "react-icons/hi";
 import { RiSearchLine } from "react-icons/ri";
-export default function Header({ onMenuToggle }: { onMenuToggle: () => void }) {
+export default function Header() {
   return (
     <div className="mt-2 lg:mt-5 md:mt-4 flex items-center w-full">
       <button
-        onClick={onMenuToggle}
         className="lg:hidden text-gray-600 hover:text-gray-800 mr-3 bg-blue-50 p-1.5 rounded-lg"
       >
         <HiMenu className="text-xl md:text-5xl" />

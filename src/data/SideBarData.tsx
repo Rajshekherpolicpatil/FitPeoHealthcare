@@ -1,16 +1,17 @@
-import { faCalendarDays, faSquarePlus, faSquarePollVertical, faCommentDots, faGear } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCalendarDays,
+  faSquarePlus,
+  faSquarePollVertical,
+  faCommentDots,
+  faGear,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import type { ReactElement } from "react";
 import { BiSolidWidget } from "react-icons/bi";
 import { HiMiniArrowsUpDown } from "react-icons/hi2";
 import { IoCall } from "react-icons/io5";
+import type { MenuItem } from "../types/types";
 
-export interface MenuItem {
-  label: string;
-  icon: ReactElement;
-  active: boolean;
-}
-export const generalMenuData:MenuItem[] = [
+export const generalMenuData: MenuItem[] = [
   {
     label: "Dashboard",
     icon: <BiSolidWidget />,

@@ -1,9 +1,8 @@
 import { RiArrowLeftFill, RiArrowRightFill } from "react-icons/ri";
-import SimpleAppointmentCard from "../SimpleAppointmentCard/SimpleAppointmentCard";
+import SimpleAppointmentCard from "../../SimpleAppointmentCard/SimpleAppointmentCard";
 import { FiPlus } from "react-icons/fi";
-import { days } from "../../data/calenderData";
-import { timeSlots } from "../../data/calenderData";
-
+import { days } from "../../../data/calenderData";
+import { timeSlots } from "../../../data/calenderData";
 
 export default function CalendarView() {
   return (

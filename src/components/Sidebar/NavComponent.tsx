@@ -1,4 +1,4 @@
-import type { MenuItem } from '../../data/SideBarData';
+import type { MenuItem } from "../../types/types";
 
 export default function NavComponent({
   menuData,

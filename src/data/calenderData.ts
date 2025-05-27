@@ -1,19 +1,6 @@
-export interface TimeSlot {
-  times: string[];
-  backgrounds: string[];
-  dot?: number; // Optional property since not all time slots have dots
-}
+import type { Day, TimeSlots } from "../types/types";
 
-export interface TimeSlots {
-  [key: number]: TimeSlot;
-}
 
-export interface Day {
-  name: string;
-  date: number;
-}
-
-// Usage example with your data:
 export const timeSlots: TimeSlots = {
   0: {
     times: ["10:00", "11:00", "12:00"],

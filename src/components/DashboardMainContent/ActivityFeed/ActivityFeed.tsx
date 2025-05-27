@@ -1,5 +1,4 @@
-import { activityData, days } from "../../data/activityData";
-
+import { activityData, days } from "../../../data/activityData";
 
 export default function ActivityFeed() {
   return (
@@ -33,9 +32,9 @@ export default function ActivityFeed() {
                 </div>
               ) : (
                 <div
-                  className={`w-1 md:w-1.5 lg:w-1 ${bar[0].color} rounded-full ${
-                    bar[0].height === 10 ? "mb-5" : ""
-                  }`}
+                  className={`w-1 md:w-1.5 lg:w-1 ${
+                    bar[0].color
+                  } rounded-full ${bar[0].height === 10 ? "mb-5" : ""}`}
                   style={{ height: `${bar[0].height * 4}px` }}
                 />
               )}
