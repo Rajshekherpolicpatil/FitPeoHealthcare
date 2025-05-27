@@ -1,6 +1,7 @@
 import { CiSearch } from "react-icons/ci";
 import { IoIosQrScanner } from "react-icons/io";
 import Indicators from "./Indicators";
+import img from "../../../../assets/image.png"
 
 export default function AnatomySection() {
   return (
@@ -8,7 +9,7 @@ export default function AnatomySection() {
       <CiSearch className="absolute right-3 top-3 text-xl md:text-5xl lg:text-2xl" />
 
         <img
-          src="/src/assets/image.png"
+          src={img}
           alt="background"
           className=" w-full h-full object-fil rounded-lg "
         />

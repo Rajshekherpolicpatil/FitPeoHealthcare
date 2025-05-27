@@ -3,6 +3,8 @@ import SimpleAppointmentCard from "../../SimpleAppointmentCard/SimpleAppointment
 import { FiPlus } from "react-icons/fi";
 import { days } from "../../../data/calenderData";
 import { timeSlots } from "../../../data/calenderData";
+import img from "../../../assets/image copy.png"
+
 
 export default function CalendarView() {
   return (
@@ -11,7 +13,7 @@ export default function CalendarView() {
         <div className="flex gap-3 items-end">
           <div className="rounded-lg p-2 w-8 h-8 lg:w-10 lg:h-10 md:w-15 md:h-15 bg-cyan-400 flex items-center justify-center">
             <img
-              src="/src/assets/image copy.png"
+              src={img}
               alt="background"
               className="w-full h-full object-fill"
             />
