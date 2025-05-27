@@ -3,7 +3,7 @@ import HealthCard from "./HealthCard";
 
 export default function HealthStatusCards() {
   return (
-   <div className="flex flex-col lg:pl-6 xl:pl-10 pr-2 lg:pr-5 mb-5">
+   <div className="flex flex-col lg:pl-3 xl:pl-10 pr-2 lg:pr-2.5 mb-5 lg:mb-0">
     <div className="relative flex flex-col gap-3">
       <HealthCard
         icon="🫁"
@@ -26,7 +26,7 @@ export default function HealthStatusCards() {
         progress="75"
         color="bg-orange-500"
       />
-      <div className="flex gap-1 items-center absolute -right-2 lg:-right-5 -bottom-6">
+      <div className="flex gap-1 items-center absolute -right-2 lg:-right-2 lg:-bottom-8 -bottom-6">
         <span className="text-xs text-blue-950/70 font-bold">Details</span>
         <span>
           <TiArrowRight size={15} className="text-blue-900/50" />

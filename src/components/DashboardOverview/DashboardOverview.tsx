@@ -10,15 +10,15 @@ export default function DashboardOverview() {
           Dashboard
         </h1>
         <div className="flex gap-1 items-center">
-          <span className="text-xs md:text-lg text-blue-950/70 font-bold">
+          <span className="text-xs md:text-lg text-blue-950/70 font-bold lg:text-xs">
             This Week
           </span>
           <span>
-            <IoChevronDownOutline className="text-blue-900/50 text-sm md:text-xl mt-0.5" />
+            <IoChevronDownOutline className="text-blue-900/50 text-sm md:text-xl mt-0.5 lg:text-xs" />
           </span>
         </div>
       </div>
-      <div className="pt-4 flex flex-col lg:flex-row lg:pl-6 gap-4">
+      <div className="pt-4 flex flex-col lg:flex-row lg:pl-4 gap-4">
         <AnatomySection />
         <HealthStatusCards />
       </div>

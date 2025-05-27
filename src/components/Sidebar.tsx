@@ -75,18 +75,18 @@ export default function Sidebar({ isOpen, onClose }) {
       <div
         className={`
         fixed lg:relative
-         inset-y-0 left-0 z-50
+         inset-y-0 left-0 z-50 
         w-64 lg:w-auto
         bg-blue-50/90 rounded-l-3xl lg:rounded-l-4xl
         transform transition-transform duration-300 ease-in-out
         ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
-        flex flex-col h-full lg:h-full lg:min-h-full
+        flex flex-col h-full lg:h-auto
       `}
       >
-        <div className="flex-1 overflow-y-auto">
-          <div>
-            <div className="flex items-center justify-between px-6 lg:px-12 pt-6 lg:pt-10">
-              <h1 className="text-2xl lg:text-3xl font-extrabold">
+        <div className="flex-1 overflow-y-auto justify-between">
+          <div className="">
+            <div className="flex items-center justify-between px-6 lg:px-10 pt-6 lg:pt-10">
+              <h1 className="text-2xl lg:text-2xl font-bold">
                 <span className="text-cyan-400">Health</span>
                 <span className="text-blue-900">care.</span>
               </h1>

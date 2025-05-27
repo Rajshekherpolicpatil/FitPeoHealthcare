@@ -18,17 +18,17 @@ export default function HealthCard({
           <div className="flex items-center space-x-3">
             <div className="text-4xl lg:text-3xl md:text-6xl">{icon}</div>
             <div>
-              <h3 className="text-lg md:text-3xl lg:text-lg font-semibold text-gray-800">
+              <h3 className="text-lg md:text-3xl lg:text-[18px] font-bold  text-gray-800">
                 {title}
               </h3>
             </div>
           </div>
         </div>
-        <p className="py-2 text-xs md:text-lg md:pl-2.5 text-gray-400 font-bold">Date: {date}</p>
+        <p className="py-2 text-xs md:text-lg md:pl-2.5 lg:pl-0 lg:text-xs text-gray-400 font-bold">Date: {date}</p>
         <div className="mb-3">
-          <div className="w-full lg:w-[150px] md:h-4 bg-gray-400/30 rounded-full h-2">
+          <div className="w-full lg:w-[150px] md:h-4 lg:h-2 bg-gray-400/30 rounded-full h-2">
             <div
-              className={`${color} h-2 md:h-4 rounded-full transition-all duration-500`}
+              className={`${color} h-2 md:h-4  lg:h-2 rounded-full transition-all duration-500`}
               style={{ width: `${progress}%` }}
             ></div>
           </div>

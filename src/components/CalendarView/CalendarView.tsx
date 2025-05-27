@@ -60,13 +60,13 @@ export default function CalendarView() {
         </div>
       </div>
       <div className="flex items-center justify-between p-2">
-        <h1 className="text-sm lg:text-md md:text-2xl font-medium text-blue-950">
+        <h1 className="text-sm lg:text-[17px] md:text-2xl lg:font-bold font-medium text-blue-950">
           October 2021
         </h1>
         <div className="flex gap-2.5">
-          <RiArrowLeftFill className="text-blue-900 cursor-pointer text-lg md:text-3xl"  />
+          <RiArrowLeftFill className="text-blue-900 cursor-pointer text-lg md:text-3xl lg:text-xl"  />
           <RiArrowRightFill
-            className="text-blue-900 cursor-pointer text-lg md:text-3xl"
+            className="text-blue-900 cursor-pointer text-lg md:text-3xl lg:text-xl"
             
           />
         </div>
@@ -80,10 +80,10 @@ export default function CalendarView() {
                 className={`${day.name === "Sun" ? "opacity-50" : ""}`}
               >
                 <div className="py-2 lg:py-4 md:py-8 text-center">
-                  <div className="text-xs md:text-xl lg:text-sm text-blue-950 font-medium">
+                  <div className="text-xs md:text-xl lg:text-xs text-blue-950 font-medium">
                     {day.name}
                   </div>
-                  <div className="text-lg md:text-3xl lg:text-2xl font-bold text-blue-950 mt-1">
+                  <div className="text-lg md:text-3xl lg:text-xl font-bold text-blue-950 mt-1">
                     {day.date}
                   </div>
                 </div>
@@ -91,12 +91,12 @@ export default function CalendarView() {
                   {timeSlots[i].times.map((time, slotIndex) => (
                     <div key={slotIndex} className="mb-1 lg:mb-2 md:mb-4">
                       <div
-                        className={`${timeSlots[i].backgrounds[slotIndex]} rounded-xl py-1 lg:py-1.5 md:py-3 flex items-center justify-center text-xs lg:text-sm md:text-xl font-medium text-blue-950`}
+                        className={`${timeSlots[i].backgrounds[slotIndex]} rounded-xl py-1 lg:py-1.5 md:py-3 flex items-center justify-center text-xs lg:text-xs md:text-xl font-medium text-blue-950`}
                       >
                         <input
                           value={time}
                           placeholder="-----"
-                          className="bg-transparent text-center outline-none w-full text-xs md:text-xl lg:text-sm"
+                          className="bg-transparent text-center outline-none w-full text-xs md:text-xl lg:text-xs"
                           readOnly
                         />
                       </div>
@@ -115,7 +115,7 @@ export default function CalendarView() {
             icon="🦷"
           />
           <SimpleAppointmentCard
-            type="Physiotherapy"
+            type="Physiotherapy Appoinment"
             time="11:00-12:00"
             doctor="Dr.Kevin Djones"
             icon="💪"

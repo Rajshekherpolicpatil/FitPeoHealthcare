@@ -5,7 +5,7 @@ export default function UpcomingSchedule() {
     <div className="p-3">
     <h1 className="text-base lg:text-lg text-blue-950 font-bold py-4 md:text-3xl">The Upcoming Schedule</h1>
     <div className="py-2 mb-4">
-      <span className="text-gray-500 text-sm md:text-xl">On Thursday</span>
+      <span className="text-gray-400 text-sm md:text-xl lg:text-sm lg:font-semibold">On Thursday</span>
       <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 pt-2.5 md:gap-6">
         <SimpleAppointmentCard
           type="Health checkup complete"
@@ -22,7 +22,7 @@ export default function UpcomingSchedule() {
       </div>
     </div>
     <div className="py-2 mb-4">
-      <span className="text-gray-500 text-sm  md:text-xl">On Saturday</span>
+      <span className="text-gray-400 text-sm  md:text-xl lg:text-sm lg:font-semibold">On Saturday</span>
       <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 pt-2.5 md:gap-6">
         <SimpleAppointmentCard
           type="Cardiologist"

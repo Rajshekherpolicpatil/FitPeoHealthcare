@@ -10,9 +10,9 @@ export default function Indicators({
   backgroundColor: string;
 }) {
   return (
-   <div className={`flex items-center gap-1 pr-2 lg:pr-3 pl-2 py-1 rounded-lg ${backgroundColor}`}>
+   <div className={`flex items-center gap-1 pr-2 lg:pr-3 lg:py-0.5 lg:pl-1  pl-2 py-1 rounded-lg ${backgroundColor}`}>
     <span className="m-1 text-xs lg:text-sm md:text-2xl">{icon}</span>
-    <span className={`text-nowrap font-bold text-xs md:text-xl ${textColor}`}>{label}</span>
+    <span className={`text-nowrap font-bold text-xs md:text-xl lg:text-xs ${textColor}`}>{label}</span>
   </div>
   );
 }

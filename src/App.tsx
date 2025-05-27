@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="bg-blue-200/40 backdrop-blur-md p-2 lg:p-4 min-h-screen absolute right-0 left-0">
-      <div className="bg-white rounded-2xl lg:rounded-4xl shadow-2xl p-2 lg:p-3 flex min-h-screen">
+      <div className="bg-white rounded-2xl lg:rounded-4xl shadow-2xl p-2  flex min-h-screen">
         <Sidebar 
           isOpen={sidebarOpen} 
           onClose={() => setSidebarOpen(false)} 
