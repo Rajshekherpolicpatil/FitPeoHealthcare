@@ -77,5 +77,5 @@ export const days: string[] = [
   "Thurs",
   "Fri",
   "Sat",
-  "Sun",
+  "Sun"
 ];
